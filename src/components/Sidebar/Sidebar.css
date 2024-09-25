@@ -17,6 +17,7 @@
   font-size: large;
   margin-top: 20px;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .cityTable {
@@ -36,6 +37,10 @@
   border: 1px solid grey;
   margin: 0;
   padding: 10px;
+}
+
+.selected {
+  border: 2px solid #7cfc00;
 }
 
 @media (max-width: 768px) {

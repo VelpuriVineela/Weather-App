@@ -74,6 +74,11 @@ td svg {
   cursor: pointer;
 }
 
+.highlight {
+  background-color: yellow;
+  transition: background-color 0.5s ease;
+}
+
 @media (max-width: 768px) {
   .detailsData {
     width: 100%;

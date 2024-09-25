@@ -1,16 +1,19 @@
 import React from "react";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ onHandleTarget, allCitiesData }) => {
   return (
     <div className="citiesList">
-      <button className="getBtn">Get Weather</button>
+      <button className="getBtn" onClick={onHandleTarget}>
+        Get Weather
+      </button>
       <div className="cityTable">
         <p className="cityTitle">City</p>
-        <p className="cityList">Las Vegas</p>
-        <p className="cityList">London</p>
-        <p className="cityList">Los Angeles</p>
-        <p className="cityList">New York</p>
+        {allCitiesData.map(({ cityName, id, isSelected }) => (
+          <p key={id} className={`cityList ${isSelected ? "selected" : ""}`}>
+            {cityName}
+          </p>
+        ))}
       </div>
     </div>
   );
