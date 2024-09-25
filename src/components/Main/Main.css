@@ -1,0 +1,13 @@
+.main {
+  height: 88vh;
+  border: 2px solid grey;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

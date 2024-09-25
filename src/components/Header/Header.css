@@ -1,0 +1,14 @@
+.navbar {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4472c4;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+  }
+}
